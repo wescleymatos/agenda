@@ -8,6 +8,8 @@ urlpatterns = patterns('',
     # Examples:
     # url(r'^$', 'gerenciador.views.home', name='home'),
     # url(r'^gerenciador/', include('gerenciador.foo.urls')),
+    url(r'^$', 'agenda.views.index'),
+    url(r'^lista/$', 'agenda.views.lista'),
 
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
@@ -15,3 +17,4 @@ urlpatterns = patterns('',
     # Uncomment the next line to enable the admin:
     # url(r'^admin/', include(admin.site.urls)),
 )
+
